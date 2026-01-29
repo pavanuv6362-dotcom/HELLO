@@ -1,12 +1,7 @@
-package day2;
+class code5{
+    public static void main (String[]args) {
+        double a = 3.14*2*10;
 
-public class code5 {
-	public static void main(String[]args) {
-		int len=10;
-		int width=3;
-		int area=len*width;
-		System.out.println("area "+area);
-		
-	}
-
+        System.out.println(a);
+    }
 }

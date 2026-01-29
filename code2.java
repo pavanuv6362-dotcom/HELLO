@@ -1,18 +1,9 @@
-package day2;
+class code2{
+    public static void main(String[]args){
+        int a=10;
+        double b=a;
+        System.out.println(b);
+        System.out.println(a);
 
-public class code2 {
-	
-	    public static void main(String[] args) {
-	        int a = 5;
-	        int b = 10;
-	        int temp;
-
-	        temp = a; 
-	        a = b;    
-	        b = temp;  
-
-	        System.out.println("a = " + a);
-	        System.out.println("b = " + b);
-	    }
-	
+    }
 }

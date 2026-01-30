@@ -1,9 +1,10 @@
 class code2{
-    public static void main(String[]args){
-        int a=10;
-        double b=a;
-        System.out.println(b);
-        System.out.println(a);
+    
+static void greet(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
 
+    public static void main(String[] args) {
+        greet("Alice");
     }
 }

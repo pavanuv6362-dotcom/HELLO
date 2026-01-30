@@ -1,7 +1,10 @@
 class code3{
-    public static void main(String[]args){
-        double a=10.50;
-        int b=(int)a;
-        System.out.println(b);
+     static int getNumber() {
+        return 10;
     }
-}
+
+    public static void main(String[] args) {
+        int result = getNumber();
+        System.out.println("Returned value: " + result);
+    }
+    }

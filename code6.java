@@ -1,19 +1,19 @@
-class Student {
-    private int id;   // private data
 
-    public void setId(int id) {   // setter
-        this.id = id;
-    }
-
-    public int getId() {          // getter
-        return id;
+class Animal {
+    Animal(String name) {
+        System.out.println("Animal: " + name);
     }
 }
 
-public class code6{
+class Dog extends Animal {
+    Dog(String name) {
+        super(name);  // Calls parent constructor
+        System.out.println("Dog created");
+    }
+}
+
+public class code6 {
     public static void main(String[] args) {
-        Student s = new Student();
-        s.setId(101);
-        System.out.println(s.getId());
+        Dog dog = new Dog("Buddy");
     }
 }

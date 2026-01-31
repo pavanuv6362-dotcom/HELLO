@@ -1,27 +1,51 @@
-class code5{
-     
-    public static int add(int a, int b) {
-        return a + b;
-    }
-
     
-    public static int add(int a, int b, int c) {
-        return a + b + c;
+    class Animal {
+    public void makeSound() {
+        System.out.println("Animal makes a sound");
     }
+}
 
-    
-    public static double add(double a, double b) {
-        return a + b;
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Dog barks: Woof!");
     }
+}
 
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Cat meows: Meow!");
+    }
+}
+
+public class code5 {
     public static void main(String[] args) {
+        Animal myAnimal;
         
-        int sum1 = add(5, 10);
-        int sum2 = add(2, 4, 6); 
-        double sum3 = add(3.5, 4.5); 
+        myAnimal = new Dog();
+        myAnimal.makeSound(); 
+        
+        myAnimal = new Cat();  
+        myAnimal.makeSound();  
+}
+}
 
-        System.out.println("Sum of 5 and 10: " + sum1);
-        System.out.println("Sum of 2, 4, and 6: " + sum2);
-        System.out.println("Sum of 3.5 and 4.5: " + sum3);
+
+
+class Main {
+    public static void  main(String[]args){
+        
+    }
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    public double add(double a, double b) {
+        return a + b;
+    }
+    
+    public int add(int a, int b, int c) {
+        return a + b + c;
     }
 }

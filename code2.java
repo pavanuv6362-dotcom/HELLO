@@ -1,25 +1,13 @@
-interface Flyable {
-    void fly();
-}
+class Rectangle {
+    int length;
+    int width;
 
-interface Swimmable {
-    void swim();
-}
-
-class Duck implements Flyable, Swimmable {
-    public void fly() {
-        System.out.println("Duck flies");
-    }
-    
-    public void swim() {
-        System.out.println("Duck swims");
-    }
-}
-
-public class code2 {
     public static void main(String[] args) {
-        Duck duck = new Duck();
-        duck.fly();   
-        duck.swim();  
+        Rectangle r = new Rectangle();
+        r.length = 10;
+        r.width = 5;
+
+        System.out.println("Area: " + (r.length * r.width));
+        System.out.println("Perimeter: " + (2 * (r.length + r.width)));
     }
 }

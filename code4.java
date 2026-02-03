@@ -1,33 +1,16 @@
-    
-    
-    class Animal {
-    public void makeSound() {
-        System.out.println("Animal makes a sound");
-    }
-}
+class BankAccount {
+    String accountHolderName;
+    int balance;
 
-class Dog extends Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("Dog barks: Woof!");
-    }
-}
-
-class Cat extends Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("Cat meows: Meow!");
-    }
-}
-
-public class code4 {
     public static void main(String[] args) {
-        Animal myAnimal;
-        
-        myAnimal = new Dog();
-        myAnimal.makeSound(); 
-        
-        myAnimal = new Cat();  
-        myAnimal.makeSound();  
-}
+        BankAccount acc = new BankAccount();
+        acc.accountHolderName = "John";
+        acc.balance = 1000;
+
+        acc.balance = acc.balance + 500;   // deposit
+        System.out.println("Balance: " + acc.balance);
+
+        acc.balance = acc.balance - 300;   // withdraw
+        System.out.println("Balance: " + acc.balance);
+    }
 }
